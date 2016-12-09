@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SnekGameXamarin"
+             x:Class="SnekGameXamarin.MainPage">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Center">
+      <Button Text="Load Game"/>
+      <Button Text="Start Game"/>
+      <Button Text="Pause Game"/>
+    </StackLayout>
+
+
+
+    <Grid Grid.Row="2" HorizontalOptions="Center">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"></ColumnDefinition>
+        <ColumnDefinition Width="Auto"></ColumnDefinition>
+        <ColumnDefinition Width="Auto"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Button Grid.Row="0" Grid.Column="1" Text="UP"/>
+      <Button Grid.Row="1" Grid.Column="0" Text="LEFT"/>
+      <Button Grid.Row="1" Grid.Column="1" Text="DOWN"/>
+      <Button Grid.Row="1" Grid.Column="2" Text="RIGHT"/>
+    </Grid>
+  </Grid>
+
+</ContentPage>
